@@ -1,0 +1,23 @@
+@import './reset.scss';
+@import './about';
+@import './section-title';
+@import './work';
+@import './footer';
+@import './full-screen-menu';
+@import './arrow';
+@import './social';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F4EDE7;
+  background-image: url('../images/textura_loopinelis.webp');
+  background-repeat: repeat;
+}
+
+@font-face {
+  font-family: Athene;
+  src: url('../fonts/Athene.otf');
+}
