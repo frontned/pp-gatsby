@@ -1,13 +1,29 @@
-@import './breakpoints';
+@import '../../../scss/breakpoints.scss';
 
-.section-title {
+.sectionTitle {
   font-family: Athene, sans-serif;
   color: #F2EAD9;
   display: flex;
   justify-content: center;
   user-select: none;
 
-  &__text {
+  &.orange {
+    color: #F07763;
+  }
+
+  &.flexStart {
+    justify-content: flex-start;
+  }
+
+  &.moreSpace {
+    .text {
+      div {
+        left: -20%;
+      }
+    }
+  }
+
+  .text {
     position: relative;
     z-index: 1;
 
@@ -24,27 +40,23 @@
       text-transform: uppercase;
     }
   }
-
-  &--orange {
-    color: #F07763;
-  }
-
-  &--flex-start {
-    justify-content: flex-start;
-  }
-
-  &--more-space {
-    .section-title__text {
-      div {
-        left: -20%;
-      }
-    }
-  }
 }
 
 @media (max-width: $mobile-max) {
-  .section-title {
-    &__text {
+  .sectionTitle {
+    &.flexStart {
+      justify-content: center;
+    }
+
+    &.moreSpace {
+      .text {
+        div {
+          left: -35%;
+        }
+      }
+    }
+
+    .text {
       top: 20px;
 
       div {
@@ -59,24 +71,24 @@
         font-size: 40px;
       }
     }
-
-    &--flex-start {
-      justify-content: center;
-    }
-
-    &--more-space {
-      .section-title__text {
-        div {
-          left: -35%;
-        }
-      }
-    }
   }
 }
 
 @media (min-width: $mobile-max) and (max-width: $tablet-max) {
-  .section-title {
-    &__text {
+  .sectionTitle {
+    &.flexStart {
+      justify-content: center;
+    }
+
+    &.moreSpace {
+      .text {
+        div {
+          left: -24%;
+        }
+      }
+    }
+
+    .text {
       top: 20px;
 
       div {
@@ -89,18 +101,6 @@
 
       h2 {
         font-size: 100px;
-      }
-    }
-
-    &--flex-start {
-      justify-content: center;
-    }
-
-    &--more-space {
-      .section-title__text {
-        div {
-          left: -24%;
-        }
       }
     }
   }

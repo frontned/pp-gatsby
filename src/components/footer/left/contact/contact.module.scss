@@ -1,0 +1,22 @@
+@import '../../../../scss/breakpoints.scss';
+
+.contact {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+@media (max-width: $mobile-max) {
+  .contact {
+    flex-direction: column;
+    padding-top: 70px;
+  }
+}
+
+@media (min-width: $mobile-max) and (max-width: $tablet-max) {
+  .contact {
+    flex-direction: column;
+  }
+}

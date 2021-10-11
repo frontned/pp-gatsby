@@ -1,0 +1,12 @@
+@import '../../scss/breakpoints.scss';
+
+.footer {
+  display: flex;
+  height: 80vh;
+}
+
+@media (min-width: $mobile-max) and (max-width: $tablet-max) {
+  .footer {
+    min-height: 630px;
+  }
+}
