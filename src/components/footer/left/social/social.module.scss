@@ -1,0 +1,25 @@
+@import '../../../../scss/breakpoints.scss';
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+
+  .title {
+    color: #F2EAD9;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    padding-bottom: 10px;
+  }
+
+  .list {
+    display: flex;
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .social {
+    padding-top: 70px;
+  }
+}

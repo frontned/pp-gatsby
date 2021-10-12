@@ -30,7 +30,7 @@ export const Header = () => (
                   transform="translate(-949.178 -834)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
                 <path
                   id="Path_8"
@@ -39,7 +39,7 @@ export const Header = () => (
                   transform="translate(-951.654 -886.357)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
               </svg>
             </div>
