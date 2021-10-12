@@ -1,7 +1,7 @@
 import * as React from 'react'
 import {SectionTitleProps} from '.'
 import * as s from './section-title.module.scss'
-import classNames from 'classNames'
+import classNames from 'classnames'
 
 export const SectionTitle = ({
   pre,
