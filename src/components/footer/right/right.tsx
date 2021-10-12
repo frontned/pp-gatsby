@@ -1,4 +1,4 @@
 import * as React from 'react'
-import './right.scss'
+import * as s from './right.module.scss'
 
-export const Right = () => <div className="right" />
+export const Right = () => <div className={s.right} />
