@@ -1,0 +1,26 @@
+@import '../../../scss/breakpoints.scss';
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  height: calc(100vh - 63px);
+  min-height: 600px;
+}
+
+@media (max-width: $mobile-max) {
+  .home {
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: calc(100vh - 52px);
+    min-height: auto;
+  }
+}
+
+@media (min-width: $mobile-max) and (max-width: $tablet-max) {
+  .home {
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: calc(100vh - 52px);
+    min-height: 1100px;
+  }
+}

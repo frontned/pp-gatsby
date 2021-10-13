@@ -1,0 +1,29 @@
+@import '../../../../../scss/breakpoints.scss';
+
+.name {
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 50px;
+  padding-left: 200px;
+  letter-spacing: 4px;
+  color: #21386E;
+  text-align: center;
+  user-select: none;
+}
+
+
+@media (max-width: $mobile-max) {
+  .name {
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: $mobile-max) and (max-width: $tablet-max) {
+  .name {
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-top: 20px;
+    font-size: 24px;
+  }
+}

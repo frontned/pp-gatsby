@@ -1,17 +1,9 @@
-@import './breakpoints';
+@import '../../../../../scss/breakpoints.scss';
 
 .social {
   position: relative;
   left: -15px;
   padding-top: 150px;
-
-  &__item {
-    padding-top: 10px;
-
-    img {
-      width: 30px;
-    }
-  }
 }
 
 @media (max-width: $mobile-max) {

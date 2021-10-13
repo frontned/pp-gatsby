@@ -2,7 +2,7 @@
   position: relative;
   cursor: pointer;
 
-  &__inner {
+  .inner {
     position: absolute;
     width: 0;
     height: 0;
@@ -13,7 +13,7 @@
     left: 50%;
   }
 
-  &__pointer {
+  .pointer {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -34,14 +34,14 @@
   }
 
   &:hover {
-    .arrow__inner {
+    .inner {
       width: 60px;
       height: 60px;
       top: -4px;
       left: -5px;
     }
 
-    .arrow__pointer {
+    .pointer {
       svg {
         width: 15px;
 

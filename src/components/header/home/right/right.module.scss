@@ -1,0 +1,35 @@
+@import '../../../../scss/breakpoints.scss';
+
+.right {
+  display: flex;
+  align-items: center;
+  width: 50%;
+
+  .photo {
+    width: 60%;
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .right {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .photo {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: $mobile-max) and (max-width: $tablet-max) {
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    .photo {
+      width: 40%;
+    }
+  }
+}
