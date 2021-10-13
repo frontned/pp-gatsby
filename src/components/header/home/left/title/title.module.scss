@@ -9,7 +9,7 @@
   color: #21386E;
   user-select: none;
 
-  .one {
+  &.one {
     &:before {
       content: '';
       position: absolute;
@@ -31,7 +31,7 @@
     }
   }
 
-  .two {
+  &.two {
     margin-left: 50px;
     top: -5%;
 
@@ -46,7 +46,7 @@
     }
   }
 
-  .three {
+  &.three {
     top: -10%;
     left: -20%;
 
@@ -71,7 +71,7 @@
     width: 100%;
     font-size: 40px;
 
-    .one {
+    &.one {
       &:before {
         content: none;
         height: 1px;
@@ -82,13 +82,13 @@
       }
     }
 
-    .two {
+    &.two {
       &:after {
         height: 1px;
       }
     }
 
-    .three {
+    &.three {
       left: 0;
 
       &:after {
@@ -107,7 +107,7 @@
     width: 100%;
     font-size: 90px;
 
-    .one {
+    &.one {
       &:before {
         content: none;
         height: 1px;
@@ -118,13 +118,13 @@
       }
     }
 
-    .two {
+    &.two {
       &:after {
         height: 1px;
       }
     }
 
-    .three {
+    &.three {
       left: 0;
 
       &:after {

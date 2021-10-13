@@ -23,7 +23,7 @@ const socialItems = [
 export const Social = () => (
   <ul className={s.social}>
     {socialItems.map(({href, src}) => (
-      <SocialItem href={href} src={src} />
+      <SocialItem key={href} href={href} src={src} />
     ))}
   </ul>
 )

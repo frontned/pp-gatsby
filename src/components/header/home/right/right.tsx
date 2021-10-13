@@ -1,12 +1,13 @@
 import * as React from 'react'
 import {Social} from './social'
 import * as s from './right.module.scss'
+import HeroImage from '../../../../images/hero_image.webp'
 
 export const Right = () => (
   <div className={s.right}>
     <img
       className={s.photo}
-      src="./images/hero_image.png"
+      src={HeroImage}
       alt="A photo of Paulius Slavinskis"
     />
     <Social />

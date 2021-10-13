@@ -1,5 +1,6 @@
 import * as React from 'react'
 import * as s from './arrow.module.scss'
+import Circle from '../../../images/circle.svg'
 
 export const Arrow = () => (
   <div className={s.arrow}>
@@ -31,6 +32,6 @@ export const Arrow = () => (
         />
       </svg>
     </div>
-    <img src="./images/circle.svg" />
+    <img src={Circle} />
   </div>
 )
