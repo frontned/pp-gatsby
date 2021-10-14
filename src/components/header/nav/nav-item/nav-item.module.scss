@@ -1,0 +1,16 @@
+.item {
+  font-family: 'Poppins', sans-serif;
+  margin-right: 30px;
+
+  &:hover {
+    a {
+      color: #F07763;
+      text-decoration: underline;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #21386E;
+  }
+}

@@ -1,0 +1,33 @@
+@import '../../../scss/breakpoints.scss';
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #fff;
+  padding: 10px 0;
+
+  .list {
+    align-self: flex-end;
+    width: 50%;
+    display: flex;
+  }
+
+  .burger {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .nav {
+    padding: 10px 20px;
+    border-bottom: none;
+
+    .list {
+      display: none;
+    }
+
+    .burger {
+      display: block;
+    }
+  }
+}

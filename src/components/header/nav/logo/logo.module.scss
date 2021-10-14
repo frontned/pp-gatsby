@@ -1,0 +1,17 @@
+@import '../../../../scss/breakpoints.scss';
+
+.logo {
+  .img {
+    width: 32px;
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .logo {
+    .img {
+      width: 24px;
+      margin-left: 0;
+    }
+  }
+}
