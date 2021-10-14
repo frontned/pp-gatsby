@@ -9,9 +9,10 @@ export const SectionTitle = ({
   orange,
   flexStart,
   moreSpace,
+  className,
 }: SectionTitleProps) => (
   <div
-    className={classNames(s.sectionTitle, {
+    className={classNames(s.sectionTitle, className, {
       [s.orange]: orange,
       [s.flexStart]: flexStart,
       [s.moreSpace]: moreSpace,

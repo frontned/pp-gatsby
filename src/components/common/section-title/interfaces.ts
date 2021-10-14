@@ -4,4 +4,5 @@ export interface SectionTitleProps {
   orange?: boolean
   flexStart?: boolean
   moreSpace?: boolean
+  className?: string
 }
