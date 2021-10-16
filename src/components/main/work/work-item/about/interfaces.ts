@@ -4,4 +4,6 @@ export interface AboutProps {
   description: string
   moreSpace?: boolean
   inVideo?: boolean
+  animate: boolean
+  animated: boolean
 }
