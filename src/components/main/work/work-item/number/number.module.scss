@@ -1,0 +1,51 @@
+@import '../../../../../scss/breakpoints.scss';
+
+.number {
+  font-family: Athene, serif;
+  position: absolute;
+  top: 20%;
+  right: 40%;
+  opacity: 0.5;
+  z-index: 1;
+  pointer-events: none;
+  color: #F07763;
+  font-size: 176px;
+}
+
+.animated {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.animate {
+  opacity: 0.5;
+}
+
+.moreSpace {
+  right: 36%;
+}
+
+.inVideo {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+}
+
+@media (max-width: $mobile-max) {
+  .number {
+    top: auto;
+    right: 0;
+    bottom: -8%;
+    font-size: 100px;
+  }
+}
+
+@media (min-width: $mobile-max) and (max-width: $tablet-max) {
+  .number {
+    top: auto;
+    right: 5%;
+    bottom: -5%;
+    width: 50%;
+  }
+}

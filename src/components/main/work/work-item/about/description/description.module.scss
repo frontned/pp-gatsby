@@ -1,0 +1,34 @@
+@import '../../../../../../scss/breakpoints.scss';
+
+.description {
+  padding-top: 30px;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.animated {
+  position: relative;
+  opacity: 0;
+  top: 100px;
+  transition: 0.5s;
+}
+
+.animate {
+  opacity: 1;
+  top: 0;
+}
+
+@media (max-width: $mobile-max) {
+  .description {
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: $mobile-max) and (max-width: $tablet-max) {
+  .description {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}

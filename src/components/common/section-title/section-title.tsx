@@ -10,6 +10,7 @@ export const SectionTitle = ({
   flexStart,
   moreSpace,
   className,
+  textClassName,
 }: SectionTitleProps) => (
   <div
     className={classNames(s.sectionTitle, className, {
@@ -18,7 +19,7 @@ export const SectionTitle = ({
       [s.moreSpace]: moreSpace,
     })}
   >
-    <div className={s.text}>
+    <div className={classNames(s.text, textClassName)}>
       <div>{pre}</div>
       <h2>{title}</h2>
     </div>

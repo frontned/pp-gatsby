@@ -1,0 +1,42 @@
+@import '../../../../scss/breakpoints.scss';
+
+.item {
+  position: relative;
+  display: flex;
+  padding-top: 150px;
+  align-items: center;
+  justify-content: center;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.video {
+  flex-direction: column;
+
+  .vidddddd {
+    width: 60%;
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .item {
+    padding-top: 100px;
+    flex-direction: column;
+  }
+
+  .video {
+    .vidddddd {
+      width: 80% !important;
+    }
+  }
+}
+
+@media (min-width: $mobile-max) and (max-width: $tablet-max) {
+  .item {
+    padding-top: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    }
+}

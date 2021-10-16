@@ -1,0 +1,28 @@
+@import '../../../../../scss/breakpoints.scss';
+
+.mobileImage {
+  display: none;
+}
+
+@media (max-width: $mobile-max) {
+  .mobileImage {
+    display: block;
+    width: 90%;
+    height: 240px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .inVideo {
+    display: none;
+  }
+}
+
+
+
+@media (min-width: $mobile-max) and (max-width: $tablet-max) {
+  .mobileImage {
+    display: none;
+  }
+}

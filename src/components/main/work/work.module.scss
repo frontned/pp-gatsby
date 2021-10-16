@@ -1,0 +1,33 @@
+@import '../../../scss/breakpoints.scss';
+
+.work {
+  padding-bottom: 7%;
+}
+
+.sectionTitle {
+  padding-top: 7%;
+}
+
+.text {
+  padding-left: 11%;
+}
+
+@media (max-width: $mobile-max) {
+  .work {
+    padding-bottom: 20%;
+  }
+
+  .text {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $mobile-max) and (max-width: $tablet-max) {
+  .work {
+    padding-bottom: 20%;
+  }
+
+  .text {
+    padding-left: 0;
+  }
+}

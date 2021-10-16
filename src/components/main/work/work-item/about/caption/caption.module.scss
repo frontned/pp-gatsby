@@ -1,0 +1,32 @@
+@import '../../../../../../scss/breakpoints.scss';
+
+.caption {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  padding-top: 10px;
+  font-weight: 200;
+}
+
+.animated {
+  position: relative;
+  opacity: 0;
+  top: 100px;
+  transition: 0.4s;
+}
+
+.animate {
+  opacity: 1;
+  top: 0;
+}
+
+@media (max-width: $mobile-max) {
+  .caption {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $mobile-max) and (max-width: $tablet-max) {
+  .caption {
+    font-size: 20px;
+  }
+}
