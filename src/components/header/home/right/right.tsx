@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {Social} from './social'
+import {Social} from '../../../common/social'
 import * as s from './right.module.scss'
 import HeroImage from '../../../../images/hero_image.webp'
 
