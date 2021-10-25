@@ -1,20 +1,15 @@
 @import '../../../scss/breakpoints.scss';
 
 .right {
+  display: none;
   width: 50%;
   background-image: url('../../../images/contact_dante_lejer.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-@media (max-width: $mobile-max) {
+@media (min-width: $tablet-max) {
   .right {
-    display: none;
-  }
-}
-
-@media (min-width: $mobile-max) and (max-width: $tablet-max) {
-  .right {
-    display: none;
+    display: block;
   }
 }

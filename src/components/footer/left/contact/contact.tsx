@@ -5,7 +5,7 @@ import * as s from './contact.module.scss'
 const contactItems = [
   {
     title: 'phone',
-    description: '370 6 35 94960',
+    description: '+370 6 35 94960',
   },
   {
     title: 'email',

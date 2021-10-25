@@ -1,19 +1,13 @@
 @import '../../../scss/breakpoints.scss';
 
 .social {
-  position: relative;
-  left: -15px;
-  padding-top: 150px;
+  display: none;
 }
 
-@media (max-width: $mobile-max) {
+@media (min-width: $tablet-max) {
   .social {
-    display: none;
-  }
-}
-
-@media (min-width: $mobile-max) and (max-width: $tablet-max) {
-  .social {
-    display: none;
+    position: relative;
+    left: -15px;
+    padding-top: 150px;
   }
 }
