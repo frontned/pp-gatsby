@@ -7,7 +7,7 @@
   position: relative;
   top: 100px;
   transition: 0.5s;
-  will-change: top;
+  will-change: top, opacity;
 
   &:hover {
     filter: none;
