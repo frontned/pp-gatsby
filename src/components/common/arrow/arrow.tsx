@@ -36,7 +36,7 @@ export const Arrow = () => {
           />
         </svg>
       </div>
-      <img src={Circle} />
+      <img src={Circle} alt="Arrow Circle" />
     </div>
   )
 }

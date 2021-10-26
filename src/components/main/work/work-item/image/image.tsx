@@ -11,5 +11,6 @@ export const Image = ({src, animate, inVideo, bigger}: ImageProps) => (
       [s.bigger]: bigger,
     })}
     src={src}
+    alt="Artwork Image"
   />
 )

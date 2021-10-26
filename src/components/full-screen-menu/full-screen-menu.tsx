@@ -27,7 +27,7 @@ const items = [
 export const FullScreenMenu = ({onClose}: FullScreenMenuProps) => (
   <div className={s.fullScreenMenu}>
     <div className={s.close}>
-      <img src={BurgerMenuClose} onClick={onClose} />
+      <img src={BurgerMenuClose} onClick={onClose} alt="Close Icon" />
     </div>
     <h2 className={s.title}>menu</h2>
     <ul className={s.list}>

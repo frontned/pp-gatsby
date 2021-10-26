@@ -23,7 +23,12 @@ const navItems = [
 export const Nav = ({onOpenFullScreenMenu}: NavProps) => (
   <nav className={s.nav}>
     <Logo />
-    <img className={s.burger} src={BurgerMenu} onClick={onOpenFullScreenMenu} />
+    <img
+      className={s.burger}
+      src={BurgerMenu}
+      onClick={onOpenFullScreenMenu}
+      alt="Burger Menu Icon"
+    />
     <ul className={s.list}>
       {navItems.map(({href, text}) => (
         <NavItem key={href} href={href} text={text} />

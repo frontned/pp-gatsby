@@ -11,7 +11,7 @@ export const About = () => (
       <div className={s.art}>
         <div className={s.background}>
           <div className={s.color} />
-          <img className={s.image} src={Asara} />
+          <img className={s.image} src={Asara} alt="Artwork" />
         </div>
         <div className={s.description}>
           <p>
