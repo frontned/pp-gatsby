@@ -4,13 +4,13 @@
   position: relative;
   background-color: #21386E;
   height: 100vh;
-  min-height: 800px;
+  min-height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
 
   .sectionTitle {
-    padding-right: 220px;
+    padding-right: 0;
   }
 
   .background {
@@ -49,7 +49,8 @@
   .content {
     .art {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: flex-start;
 
       .description {
         color: #fff;
@@ -67,6 +68,7 @@
   }
 
   .backgroundElement {
+    display: none;
     position: absolute;
     bottom: 0;
     pointer-events: none;
@@ -78,15 +80,8 @@
   .about {
     min-height: 670px;
 
-    .sectionTitle {
-      padding-right: 0;
-    }
-
     .content {
       .art {
-        flex-direction: column;
-        align-items: center;
-
         .background {
           width: 50%;
           top: 0;
@@ -100,10 +95,6 @@
         }
       }
     }
-
-    .backgroundElement {
-      display: none;
-    }
   }
 }
 
@@ -111,15 +102,8 @@
   .about {
     min-height: 1200px;
 
-    .sectionTitle {
-      padding-right: 0;
-    }
-
     .content {
       .art {
-        flex-direction: column;
-        align-items: center;
-
         .background {
           width: 60%;
           top: 0;
@@ -133,9 +117,24 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: $tablet-max) {
+  .about {
+    .sectionTitle {
+      padding-right: 220px;
+    }
+
+    .content {
+      .art {
+        justify-content: center;
+        flex-direction: row;
+      }
+    }
 
     .backgroundElement {
-      display: none;
+      display: block;
     }
   }
 }

@@ -3,6 +3,7 @@ import {Social} from '../common/social'
 import * as s from './full-screen-menu.module.scss'
 import {FullScreenMenuItem} from './full-screen-menu-item'
 import BurgerMenuClose from '../../images/burger_menu_close.svg'
+import {FullScreenMenuProps} from '.'
 
 const items = [
   {
@@ -23,15 +24,20 @@ const items = [
   },
 ]
 
-export const FullScreenMenu = () => (
+export const FullScreenMenu = ({onClose}: FullScreenMenuProps) => (
   <div className={s.fullScreenMenu}>
     <div className={s.close}>
-      <img src={BurgerMenuClose} />
+      <img src={BurgerMenuClose} onClick={onClose} />
     </div>
     <h2 className={s.title}>menu</h2>
     <ul className={s.list}>
       {items.map(({href, text}) => (
-        <FullScreenMenuItem key={href} href={href} text={text} />
+        <FullScreenMenuItem
+          key={href}
+          href={href}
+          text={text}
+          onClick={onClose}
+        />
       ))}
     </ul>
     <Social className={s.social} itemClassName={s.item} />

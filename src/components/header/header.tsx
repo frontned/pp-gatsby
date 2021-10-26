@@ -1,11 +1,11 @@
 import * as React from 'react'
 import {Nav} from './nav'
 import {Home} from './home'
-import * as s from './header.module.scss'
+import {HeaderProps} from '.'
 
-export const Header = () => (
-  <header className={s.header} id="home">
-    <Nav />
+export const Header = ({onOpenFullScreenMenu}: HeaderProps) => (
+  <header id="home">
+    <Nav onOpenFullScreenMenu={onOpenFullScreenMenu} />
     <Home />
   </header>
 )

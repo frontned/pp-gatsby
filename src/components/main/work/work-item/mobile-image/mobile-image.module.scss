@@ -9,9 +9,7 @@
     display: block;
     width: 90%;
     height: 240px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    object-fit: cover;
   }
 
   .inVideo {

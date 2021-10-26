@@ -8,6 +8,7 @@
   padding-left: 100px;
   color: #21386E;
   user-select: none;
+  overflow: hidden;
 
   &.one {
     &:before {
@@ -131,5 +132,11 @@
         height: 1px;
       }
     }
+  }
+}
+
+@media (min-width: $laptop-min) {
+  .title {
+    overflow: visible;
   }
 }
