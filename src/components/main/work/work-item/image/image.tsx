@@ -3,17 +3,10 @@ import {ImageProps} from '.'
 import * as s from './image.module.scss'
 import classNames from 'classnames'
 
-export const Image = ({
-  src,
-  animate,
-  animated,
-  inVideo,
-  bigger,
-}: ImageProps) => (
+export const Image = ({src, animate, inVideo, bigger}: ImageProps) => (
   <img
     className={classNames(s.image, {
       [s.animate]: animate,
-      [s.animated]: animated,
       [s.inVideo]: inVideo,
       [s.bigger]: bigger,
     })}

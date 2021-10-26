@@ -3,15 +3,10 @@ import * as s from './description.module.scss'
 import {DescriptionProps} from '.'
 import classNames from 'classnames'
 
-export const Description = ({
-  description,
-  animate,
-  animated,
-}: DescriptionProps) => (
+export const Description = ({description, animate}: DescriptionProps) => (
   <p
     className={classNames(s.description, {
       [s.animate]: animate,
-      [s.animated]: animated,
     })}
   >
     {description}

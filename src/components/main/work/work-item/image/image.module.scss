@@ -4,18 +4,15 @@
   width: 25%;
   filter: grayscale(1);
   opacity: 0.4;
-  transition: 0.3s;
+  position: relative;
+  top: 100px;
+  transition: 0.5s;
+  will-change: top;
 
   &:hover {
     filter: none;
     opacity: 1;
   }
-}
-
-.animated {
-  position: relative;
-  top: 100px;
-  transition: 0.5s;
 }
 
 .animate {

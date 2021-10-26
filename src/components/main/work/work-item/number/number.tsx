@@ -3,17 +3,10 @@ import * as s from './number.module.scss'
 import {NumberProps} from '.'
 import classNames from 'classnames'
 
-export const Number = ({
-  number,
-  animate,
-  animated,
-  moreSpace,
-  inVideo,
-}: NumberProps) => (
+export const Number = ({number, animate, moreSpace, inVideo}: NumberProps) => (
   <span
     className={classNames(s.number, {
       [s.animate]: animate,
-      [s.animated]: animated,
       [s.moreSpace]: moreSpace,
       [s.inVideo]: inVideo,
     })}

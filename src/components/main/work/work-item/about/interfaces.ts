@@ -5,5 +5,4 @@ export interface AboutProps {
   moreSpace?: boolean
   inVideo?: boolean
   animate: boolean
-  animated: boolean
 }

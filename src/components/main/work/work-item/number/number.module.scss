@@ -5,16 +5,13 @@
   position: absolute;
   top: 20%;
   right: 40%;
-  opacity: 0.5;
   z-index: 1;
   pointer-events: none;
   color: #F07763;
   font-size: 176px;
-}
-
-.animated {
   opacity: 1;
   transition: 0.5s;
+  will-change: opacity;
 }
 
 .animate {

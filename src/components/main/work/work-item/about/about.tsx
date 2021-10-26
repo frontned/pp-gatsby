@@ -13,7 +13,6 @@ export const About = ({
   caption,
   description,
   animate,
-  animated,
 }: AboutProps) => (
   <div
     className={classNames(s.about, {
@@ -21,12 +20,8 @@ export const About = ({
       [s.inVideo]: inVideo,
     })}
   >
-    <Title animate={animate} animated={animated} title={title} />
-    <Caption animate={animate} animated={animated} caption={caption} />
-    <Description
-      animate={animate}
-      animated={animated}
-      description={description}
-    />
+    <Title animate={animate} title={title} />
+    <Caption animate={animate} caption={caption} />
+    <Description animate={animate} description={description} />
   </div>
 )
