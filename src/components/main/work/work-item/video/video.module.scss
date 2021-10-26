@@ -1,11 +1,18 @@
 @import '../../../../../scss/breakpoints.scss';
 
 .video {
-  width: 60%;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 @media (max-width: $mobile-max) {
   .video {
-    width: 90% !important;
+    width: 90%;
+  }
+}
+
+@media (min-width: $laptop-min) {
+  .video {
+    width: 70%;
   }
 }

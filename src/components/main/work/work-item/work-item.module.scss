@@ -3,30 +3,23 @@
 .item {
   position: relative;
   display: flex;
-  padding-top: 150px;
+  padding-top: 100px;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.reverse {
-  flex-direction: row-reverse;
-}
-
-.video {
-  flex-direction: column;
-}
-
-@media (max-width: $mobile-max) {
+@media (min-width: $laptop-min) {
   .item {
-    padding-top: 100px;
-    flex-direction: column;
+    padding-top: 150px;
+    flex-direction: row;
   }
-}
 
-@media (min-width: $mobile-max) and (max-width: $tablet-max) {
-  .item {
-    padding-top: 100px;
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .video {
     flex-direction: column;
-    align-items: flex-start;
   }
 }
