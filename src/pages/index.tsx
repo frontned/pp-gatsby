@@ -15,7 +15,6 @@ const Index = () => {
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins:wght@200;300;600&display=swap"
         rel="stylesheet"
       />
-      <link rel="icon" href="../images/Logo.svg" type="image/icon type" />
       <Header onOpenFullScreenMenu={() => setFullScreenMenuOpened(true)} />
       <Main />
       <Footer />

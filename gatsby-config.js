@@ -1,7 +1,15 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "Portfolio",
+    siteUrl: 'https://slavinsky.me/',
+    title: 'Portfolio',
   },
-  plugins: ["gatsby-plugin-sass"],
-};
+  plugins: [
+    'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: 'src/images/Logo.svg',
+      },
+    },
+  ],
+}
