@@ -7,7 +7,18 @@ export const FullScreenMenuItem = ({
   onClick,
 }: FullScreenMenuItemProps) => (
   <li>
-    <a href={href} onClick={onClick}>
+    <a
+      href={href}
+      onClick={event => {
+        event.preventDefault()
+
+        document
+          .getElementById(href.replace('#', ''))
+          .scrollIntoView({behavior: 'smooth'})
+
+        onClick()
+      }}
+    >
       {text}
     </a>
   </li>
